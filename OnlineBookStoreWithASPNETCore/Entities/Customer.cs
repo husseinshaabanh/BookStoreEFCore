@@ -20,6 +20,7 @@ namespace OnlineBookStoreWithASPNETCore.Entities
         public string Street { get; set; }
         public string Zip_Code { get; set; }
 
+
         //[InverseProperty(nameof(Order.Customer))]
         public ICollection<Order> Orders { get; set; } = new HashSet<Order>();
     }
